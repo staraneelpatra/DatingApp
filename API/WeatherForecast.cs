@@ -1,6 +1,6 @@
 namespace API;
 
-// ! Depricated
+// ! Depricated.
 public class WeatherForecast
 {
     public DateOnly Date { get; set; }
