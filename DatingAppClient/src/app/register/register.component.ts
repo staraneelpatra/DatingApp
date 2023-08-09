@@ -16,12 +16,12 @@ export class RegisterComponent {
               private toaster: ToastrService) { }
 
   register(){
-    this.accountServices.register(this.model) .subscribe({
+    this.accountServices.register(this.model).subscribe({
       next: () => {
           this.cancel();
         },
         error: error => {this.toaster.error(error.error),
-                        console.log(error)
+                         console.log(error)
         }
     })
   }
